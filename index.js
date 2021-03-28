@@ -24,8 +24,8 @@ btn.addEventListener("click", function() {
         btnClear.disabled = false;
     }
     else if (input == "") {
-        warning.innerHTML = "Warning: Input field must not be empty!"
-        warning.innerHTML = ""
+        alert("Warning: Input field must not be empty!")
+        
     }
     else if (input > secretNum) {
         output.innerHTML = "Try again, number inputed was to high!"

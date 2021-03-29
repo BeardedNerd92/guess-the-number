@@ -1,3 +1,7 @@
+body {
+    font-family: 'Arvo', serif;
+}
+
 .mt-2 {
     margin-top: 4 !important;
 }
@@ -6,4 +10,30 @@
     color: red;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+#card-para {
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+
+#card-handler {
+    display: none;
+    height: 30vh;
+    background-color: rgb(255, 0, 0, 0.5);
+}
+
+#card-title{
+    color: whitesmoke;
+    font-size: 2rem;
+}
+
+#button {
+    color: whitesmoke;
+    font-size: 1rem;
+    width: 5em;
+}
+
+#btn {
+    font-size: 1em;
 }

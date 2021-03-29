@@ -9,12 +9,31 @@
 
     <link rel="stylesheet" href="index.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+
     <title>
-        Guess The Number
+    Guess The Number
     </title>
 
 </head>
+
 <body class="container-fluid text-center">
+
+    <div class="card mt-4" id="card-handler">
+        <div class="card-header" id="card-title">
+            Invalid Response
+        </div>
+
+        <div class="card-body">
+            <p class="card-text" id="card-para">
+                Input box must not be blank, Try again.         
+            </p>
+        </div>
+
+        <button id="button" class="btn btn-danger btn btn-sm mb-2">
+                Ok
+        </button>
+    </div>
 
     <main id="main class">
 
@@ -33,7 +52,7 @@
             </div>
 
         <div>
-            <button type="button" id="btn" class="btn btn-outline-primary mt-3">
+            <button type="button" id="btn" class="btn btn-primary mt-3">
                Submit Guess
             </button>
         </div>

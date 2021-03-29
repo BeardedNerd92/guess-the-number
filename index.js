@@ -1,42 +1,52 @@
 let secretNum = 50
+
 let numOfTries = 0
+
 let btn = document.querySelector("#btn")
 
 btn.addEventListener("click", function() {
 
+    let cardDisplay = document.querySelector("#card-handler")
+
     let output = document.querySelector("#output")
-    let warning = document.querySelector(".warning")
+
     let input = document.querySelector(".input").value
+
     let tries = document.querySelector("#tries")
+
     let btnClear = document.querySelector("#btn-2");
     btnClear.disabled = true;
 
-    function timeDelay() {
-        setTimeout(delay, 3000)
-    }
-     
+    let closeBtn = document.querySelector("#button")
+    closeBtn.addEventListener("click", function() {
+        cardDisplay.style.display = "none"
+    })
+
+
    do {
 
     if (input == secretNum) {
-        output.innerHTML = `Correct!` 
+        output.innerHTML = `Correct! ${input} is the number I chose` 
         numOfTries++
         tries.innerHTML = `The total number of tries = ${numOfTries}`
         btnClear.disabled = false;
     }
     else if (input == "") {
-        alert("Warning: Input field must not be empty!")
-        
+        cardDisplay.style.display = "block"
     }
     else if (input > secretNum) {
-        output.innerHTML = "Try again, number inputed was to high!"
+        output.innerHTML = `Try again, the number ${input} is to high!`
         numOfTries++
     }
     else if (input < secretNum) {
-        output.innerHTML = "Try again, number inputed was to small!"
+        output.innerHTML = `Try again, the number ${input} is to small!`
         numOfTries++
     }
 
 } while(false)
 });
+
+
+
 
 

@@ -28,7 +28,7 @@ btn.addEventListener("click", function() {
     if (input == secretNum) {
         output.innerHTML = `Correct! ${input} is the number I chose` 
         numOfTries++
-        tries.innerHTML = `The total number of tries = ${numOfTries}`
+        tries.innerHTML = `It took you ${numOfTries} try/tries to guess the correct number.`
         btnClear.disabled = false;
     }
     else if (input == "") {

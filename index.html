@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
 
     <title>
-    Guess The Number
+        Guess The Number
     </title>
 
 </head>
@@ -37,45 +37,41 @@
 
     <main id="main class">
 
-        <h1 class="main_heading mt-4">
-            Guess The Number
-        </h1>
 
-        <p class="para mt-4">
+        <h1 class="para mt-4 mb-4">
             Pick a number between 1-100:
-        </p>
+        </h1>
 
         <form>
             <div>
                 <label for="text"></label>
-                <input required type="text" class="input" placeholder="Input">
+                <input required type="text" id="users-input" class="input" placeholder="Input">
+
+                <button type="button" id="btn" class="btn btn-primary">
+                    Submit Guess
+                 </button>
             </div>
 
-        <div>
-            <button type="button" id="btn" class="btn btn-primary mt-3">
-               Submit Guess
-            </button>
-        </div>
 
-        <div class="mt-4">
-            <p id="output">
-            </p>
-        </div>
+             
+            <div class="mt-4">
+                    <p id="output" class="mt-2">
+                    </p>
+            </div>
 
-        <div class="mt-4">
-            <samp id="tries"> 
-            </samp>
-        </div>
+            <div class="mt-4">
+                    <p id="tries"> 
+                    </p>
+            </div>
+             
 
-        <p class="warning">
-        </p>
+            <div>
+                <button id="btn-2" disabled class="btn btn-danger mt-3">
+                    Clear input
+                </button>
+            </div>
 
-        <div>
-            <button id="btn-2" disabled class="btn btn-danger mt-3">
-                Clear input
-            </button>
-        </div>
-    </form>
+        </form>
 
     </main>
 

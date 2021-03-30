@@ -1,4 +1,4 @@
-body {
+html {
     font-family: 'Arvo', serif;
     background-color: whitesmoke;
 }
@@ -17,7 +17,7 @@ body {
 #card-handler {
     display: none;
     height: 30vh;
-    background-color: rgb(255, 0, 0, 0.5);
+    background-color: rgb(255, 0, 0, 0.4);
 }
 
 #card-title{
@@ -38,4 +38,8 @@ body {
 
 #users-input {
     border-radius: 10%;
+}
+
+#main_class {
+    display: none;
 }

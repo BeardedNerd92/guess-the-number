@@ -23,23 +23,27 @@
 
         <div id="player-name-card">
 
-            <form>
-                <p>
+            <form class="intro">
+                
+               <div id="greeting">
+
+                <p class="mt-4 mb-4">
                     Hey player, are you ready for a quick guessing game?
                 </p>
+
+               </div>
     
-                <p>
-                    if so, type your name below and press the play game button.
-                </p>
-    
-                <label for="text"></label>
-                <input  type="text" class="input" id="player-name" placeholder="Player's name here">
+                <label for="text">Name:</label>
+                <input  type="text" class="input" id="player-name" placeholder="Optional">
     
                 <br>
     
                 <button type="button" id="play-game-btn" class="btn btn-primary mt-4 mb-4" required>
                     Play Game
                 </button>
+
+                <br>
+
     
             </form>
     
@@ -63,21 +67,27 @@
     
         <main id="main_class">
 
-            <h1 class="welcome">
+            <h1 class="welcome mt-4">
             </h1>
     
             <h1 class="para mt-4 mb-4">
-                Can you guess the number I am looking for?
+                Try guessing the number I am looking for?
             </h1>
     
             <form>
                 <div>
                     <label for="text"></label>
-                    <input required type="text" id="users-input" class="input" placeholder="Input">
+                    <input type="text" id="users-input" onfocus="this.value=''" class="input" placeholder="Input">
+
+                    <div class="mt-2" id="invalid-input">
+                        <p>
+                        
+                        </p>
+                    </div>
                     
                     <br>
 
-                    <button type="button" id="btn" class="btn btn-primary mt-4">
+                    <button type="button" id="btn" class="btn btn-primary mt-3">
                         Submit Guess
                     </button>
                 </div>
@@ -96,7 +106,7 @@
                 
     
                 <div>
-                    <button id="btn-2" disabled class="btn btn-danger mt-3">
+                    <button id="btn-2" disabled class="btn btn-danger mt-3 mb-4">
                         Clear input
                     </button>
                 </div>

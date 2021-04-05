@@ -36,10 +36,25 @@ html {
     font-size: 1em;
 }
 
-#users-input {
-    border-radius: 10%;
-}
-
 #main_class {
     display: none;
+}
+
+
+
+#load-game {
+    display: none;
+}
+
+::placeholder {
+    font-style: italic;
+}
+
+#greeting {
+    font-size: 2rem;
+}
+
+#invalid-input {
+    font-style: italic;
+    color: red;
 }

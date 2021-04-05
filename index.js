@@ -10,9 +10,15 @@ let mainClass = document.querySelector("#main_class")
 
 let welcome = document.querySelector(".welcome")
 
+let loadGame = document.querySelector("#load-game")
+
+
 
 let btn = document.querySelector("#btn")
 btn.addEventListener("click", function() {
+
+
+    let invalidInput = document.querySelector('#invalid-input')
 
     let output = document.querySelector("#output")
 
@@ -31,15 +37,20 @@ btn.addEventListener("click", function() {
         tries.innerHTML = `It took you ${numOfTries} try/tries to guess the correct number.`
         btnClear.disabled = false;
     }
-    else if (input == "") {
-        cardDisplay.style.display = "block"
+    if (input === "") {
+        invalidInput.innerHTML = 'Input field must not be blank.'
+        output.style.display = 'none'
     }
-    else if (input > secretNum) {
-        output.innerHTML = `Try again, the number ${input} is to high!`
+    if(input !== ''){
+        output.style.display = 'block'
+        invalidInput.style.display = 'none'
+    }
+    if (input > secretNum) {
+        output.innerHTML = `Try again, the number ${input} is too high!`
         numOfTries++
     }
-    else if (input < secretNum) {
-        output.innerHTML = `Try again, the number ${input} is to small!`
+    if (input < secretNum) {
+        output.innerHTML = `Try again, the number ${input} is too small!`
         numOfTries++
     }
 
@@ -57,10 +68,14 @@ playGameBtn.addEventListener("click", function() {
     let playerName = document.querySelector("#player-name").value
     playerNameCard.style.display = "none"
     mainClass.style.display = "block"
+
+
     if (playerName !== "")
         welcome.innerHTML = `Welcome ${playerName}`.toUpperCase()
+
     if (playerName == "")
         welcome.innerHTML = "Welcome Player"
+
 })
 
 

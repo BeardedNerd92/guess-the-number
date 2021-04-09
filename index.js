@@ -47,7 +47,6 @@ btn.addEventListener("click", function() {
             invalidInput.style.display = 'block'
             output.style.display = 'none'
             invalidSign.style.display = 'block'
-            border.style.borderColor = 'red'
         }
         if(input !== ''){
             output.style.display = 'block'

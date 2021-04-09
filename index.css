@@ -31,7 +31,7 @@ html {
 
 #invalid-input {
     color: rgb(173, 24, 24);
-    font: message-box;
+    font-style: italic;
     font-size: 25px;
     display: none;
 }
@@ -43,6 +43,7 @@ html {
     margin-top: .5em;
     margin-left: 13em;
     color: rgb(173, 24, 24);
+    font-style: italic;
     display: none;
 }
 
@@ -62,7 +63,7 @@ html {
 
 #dark-mode-sign {
     font-size: 1.5em;
-    margin-top: .1em;
+    margin-top: .05em;
     margin-right: .5em;
 }
 
@@ -116,5 +117,10 @@ html {
   }
 
   footer {
-      font-size: 25px;
+      font-size: 20px;
+  }
+
+  #footer-links {
+      font-size: 1.5em;
+      color: black;
   }

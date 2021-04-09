@@ -1,6 +1,6 @@
 html {
     font-family: 'Arvo', serif;
-    background-color: whitesmoke;
+    color: snow;
 }
 
 .warning {
@@ -9,21 +9,6 @@ html {
     font-weight: bold;
 }
 
-#card-para {
-    color: whitesmoke;
-    font-size: 1.5rem;
-}
-
-#card-handler {
-    display: none;
-    height: 30vh;
-    background-color: rgb(255, 0, 0, 0.4);
-}
-
-#card-title{
-    color: whitesmoke;
-    font-size: 2rem;
-}
 
 #button {
     color: whitesmoke;
@@ -32,29 +17,104 @@ html {
 }
 
 #btn {
-    border-radius: 10%;
     font-size: 1em;
 }
 
-#main_class {
+#btn-2 {
     display: none;
 }
 
-
-
-#load-game {
-    display: none;
-}
 
 ::placeholder {
     font-style: italic;
 }
 
-#greeting {
-    font-size: 2rem;
+#invalid-input {
+    color: rgb(173, 24, 24);
+    font: message-box;
+    font-size: 25px;
+    display: none;
 }
 
-#invalid-input {
-    font-style: italic;
-    color: red;
+
+
+#invalid-sign {
+    position: absolute;
+    margin-top: .5em;
+    margin-left: 13em;
+    color: rgb(173, 24, 24);
+    display: none;
 }
+
+#users-input {
+    width: 15em;
+}
+
+#output {
+    font-size: 25px;
+}
+
+
+.dark-mode {
+    background-color: #161b22;
+    color: white;
+}
+
+#dark-mode-sign {
+    font-size: 1.5em;
+    margin-top: .1em;
+    margin-right: .5em;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(207, 204, 204);
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: '';
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: black;
+    transition: .4s
+}
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+
+
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  footer {
+      font-size: 25px;
+  }

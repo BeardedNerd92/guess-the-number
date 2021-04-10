@@ -1,22 +1,14 @@
 let secretNum = Math.floor(Math.random() * 50)
 
-let numOfTries = 0
+let numOfTries = 1
 
-let playerNameCard = document.querySelector("#player-name-card")
-
-let cardDisplay = document.querySelector("#card-handler")
-
-let mainClass = document.querySelector("#main_class")
-
-let welcome = document.querySelector(".welcome")
-
-let loadGame = document.querySelector("#load-game")
-
+let gameOver = 8
 
 
 let btn = document.querySelector("#btn")
-btn.addEventListener("click", function() {
-
+btn.addEventListener("click", function() 
+{
+    let outputForTries = document.querySelector('#output-for-tries')
 
     let invalidInput = document.querySelector('#invalid-input')
 
@@ -30,36 +22,54 @@ btn.addEventListener("click", function() {
 
     let invalidSign = document.querySelector('#invalid-sign')
 
-    let border = document.querySelector('#border')
+    let gameOverDisplay = document.querySelector('#game-over')
 
 
     
 
    do {
 
-        if (input == secretNum) {
+        if (input == secretNum) 
+        {
+            outputForTries.style.display = 'none'
             output.innerHTML = `Correct! ${input} is the number I am looking for.` 
-            numOfTries++
             tries.innerHTML = `It took you ${numOfTries} try/tries to guess the correct number.`
+            btn.style.display = 'none'
             btnClear.style.display = 'block';
         }
-        if (input === "") {
+
+        if (input === "")
+        {
             invalidInput.style.display = 'block'
             output.style.display = 'none'
             invalidSign.style.display = 'block'
         }
-        if(input !== ''){
+
+        if (input !== '')
+        {
             output.style.display = 'block'
             invalidInput.style.display = 'none'
             invalidSign.style.display = 'none'
         }
-        if (input > secretNum) {
+
+        if (input > secretNum) 
+        {
+            outputForTries.innerHTML = `Number of guesses: ${numOfTries++}`
             output.innerHTML = `Try again, the number ${input} is too high!`
-            numOfTries++
         }
-        if (input < secretNum) {
+
+        if (input < secretNum) 
+        {
+            outputForTries.innerHTML = `Number of guesses: ${numOfTries++}`
             output.innerHTML = `Try again, the number ${input} is too small!`
-            numOfTries++
+        }
+
+        if (numOfTries === gameOver) 
+        {
+            btn.style.display = 'none'
+            output.style.display = 'none'
+            gameOverDisplay.style.display = 'block'
+            btnClear.style.display = 'block';
         }
 
     } while(false)
@@ -70,9 +80,11 @@ btn.addEventListener("click", function() {
 
 
 
+// Toggle switch for dark mode.
 
 let toggleOn = document.querySelector('#toggle-on')
-toggleOn.addEventListener('click', function(){
+toggleOn.addEventListener('click', function()
+{
     
     let darkMode = document.body
     darkMode.classList.toggle("dark-mode")

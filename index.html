@@ -34,18 +34,18 @@
         </div>
         
 
-        <main id="main_class" class="vh-100  container">
+        <main id="main_class" class="vh-100 container">
 
             <h1 class="  para   mt-5   mb-4">
                 The computer has guessed a number between 1 and 50 randomly.
-                See if you can guess the correct number.
+                See if you can guess the correct number in 7 guesses.
             </h1>
 
             <form class="mt-5">
                 <div class="d-flex justify-content-center">
                     <i id="invalid-sign" class="fas fa-exclamation"></i>
                     <label for="number" class="form-label"></label>
-                    <input type="text" id="users-input" onfocus="this.value=''" class="form-control" placeholder="Input">
+                    <input type="text" id="users-input" onfocus="this.value=''" class="form-control" placeholder="Input Field">
                 </div> 
 
                 <div class="mt-2">
@@ -53,22 +53,34 @@
                         Invalid Input
                     </p>
                 </div>
-                
+
                 <div>
-                    <button type="button" id="btn" class="btn btn-primary mt-5">
-                        Submit Guess
-                    </button>
+                    <p id="output-for-tries">
+                    </p>
                 </div>
 
 
-                
                 <div class="mt-4">
                     <p id="output" class="mt-2">
                     </p>
                 </div>
 
+                
+                <div>
+                    <button type="button" id="btn" class="btn btn-primary mt-3">
+                        Submit Guess
+                    </button>
+                </div>
+
+
                 <div class="mt-4">
                     <p id="tries"> 
+                    </p>
+                </div>
+
+                <div class="mt-4">
+                    <p id="game-over">
+                        GAME OVER!!!
                     </p>
                 </div>
                 
@@ -78,7 +90,7 @@
                         Play Again
                     </button>
                 </div>
-
+            
             </form>
 
             <footer class="mt-5">

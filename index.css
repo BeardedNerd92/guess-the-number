@@ -1,35 +1,63 @@
-html {
+html 
+{
     font-family: 'Arvo', serif;
     color: snow;
 }
 
-.warning {
+
+
+.warning 
+{
     color: red;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
 
-#button {
+#button 
+{
     color: whitesmoke;
     font-size: 1rem;
     width: 5em;
 }
 
-#btn {
+
+
+#btn 
+{
     font-size: 1em;
 }
 
-#btn-2 {
+
+
+#btn-2
+{
     display: none;
 }
 
 
-::placeholder {
+::placeholder 
+{
     font-style: italic;
 }
 
-#invalid-input {
+
+#output-for-tries 
+{
+    font-size: 20px;
+}
+
+
+#game-over 
+{
+    font-size: 20px;
+    display: none;
+}
+
+
+
+#invalid-input 
+{
     color: rgb(173, 24, 24);
     font-style: italic;
     font-size: 25px;
@@ -38,7 +66,8 @@ html {
 
 
 
-#invalid-sign {
+#invalid-sign 
+{
     position: absolute;
     margin-top: .5em;
     margin-left: 13em;
@@ -47,41 +76,62 @@ html {
     display: none;
 }
 
-#users-input {
+
+
+#users-input 
+{
     width: 15em;
 }
 
-#output {
+
+
+#output 
+{
     font-size: 25px;
 }
 
 
-.dark-mode {
+
+/* Toggle switch for dark mode */
+
+.dark-mode 
+{
     background-color: #161b22;
     color: white;
 }
 
-#dark-mode-sign {
+
+
+#dark-mode-sign 
+{
     font-size: 1.5em;
     margin-top: .05em;
     margin-right: .5em;
 }
 
 
-.switch {
+
+.switch 
+{
     position: relative;
     display: inline-block;
     width: 50px;
     height: 24px;
 }
 
-.switch input {
+
+
+.switch input 
+{
     opacity: 0;
     width: 0;
     height: 0;
 }
 
-.slider {
+
+
+.slider 
+{
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -92,7 +142,10 @@ html {
     transition: .4s;
 }
 
-.slider:before {
+
+
+.slider:before 
+{
     position: absolute;
     content: '';
     height: 16px;
@@ -102,25 +155,39 @@ html {
     background-color: black;
     transition: .4s
 }
+
+
   
-  input:checked + .slider:before {
+input:checked + .slider:before 
+{
     transform: translateX(26px);
-  }
+}
 
 
-  .slider.round {
+
+.slider.round 
+{
     border-radius: 34px;
-  }
+}
+
+
   
-  .slider.round:before {
+.slider.round:before 
+{
     border-radius: 50%;
-  }
+}
 
-  footer {
-      font-size: 20px;
-  }
 
-  #footer-links {
-      font-size: 1.5em;
-      color: black;
-  }
+
+footer 
+{
+    font-size: 20px;
+}
+
+
+
+#footer-links 
+{
+    font-size: 1.5em;
+    color: black;
+}

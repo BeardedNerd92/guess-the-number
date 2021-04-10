@@ -1,9 +1,30 @@
+// Toggle switch for dark mode.
+
+let toggleOn = document.querySelector('#toggle-on')
+toggleOn.addEventListener('click', function()
+{
+    
+    let darkMode = document.body
+    darkMode.classList.toggle("dark-mode")
+    
+})
+
+
+
+
+// Variables for btn logic
+
 let secretNum = Math.floor(Math.random() * 50)
 
 let numOfTries = 1
 
 let gameOver = 8
 
+
+
+
+
+// Submit btn logic
 
 let btn = document.querySelector("#btn")
 btn.addEventListener("click", function() 
@@ -75,18 +96,3 @@ btn.addEventListener("click", function()
     } while(false)
 
 });
-
-
-
-
-
-// Toggle switch for dark mode.
-
-let toggleOn = document.querySelector('#toggle-on')
-toggleOn.addEventListener('click', function()
-{
-    
-    let darkMode = document.body
-    darkMode.classList.toggle("dark-mode")
-    
-})

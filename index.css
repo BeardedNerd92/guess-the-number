@@ -5,6 +5,18 @@ html
 }
 
 
+#logo 
+{
+    font-size: 1.2em;
+    position: absolute;
+}
+
+
+.logo-name 
+{
+    font-family: 'Source Code Pro', monospace;
+}
+
 
 .warning 
 {
@@ -80,6 +92,9 @@ html
 
 #users-input 
 {
+    border-top: none;
+    border-left: none;
+    border-right: none;
     width: 15em;
 }
 
